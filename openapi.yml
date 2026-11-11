@@ -1,0 +1,82 @@
+openapi: 3.1.0
+info:
+  title: Returns (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Returns interface, distilled from the harvested OpenAPI of 370 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /returns:
+    post:
+      operationId: createReturnRequest
+      summary: Create a return request
+      tags:
+      - Return Requests
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id001
+                $ref: '#/components/schemas/ReturnRequest'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    get:
+      operationId: listReturns
+      summary: List returns
+      tags:
+      - Return Requests
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id001
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /returns/{return_request_id}:
+    parameters:
+    - $ref: '#/components/parameters/return_request_id'
+    get:
+      operationId: getReturnRequest
+      summary: Get a return request
+      tags:
+      - Return Requests
+      x-commons-tier: core
+      x-commons-share: 0.531
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+components:
+  schemas:
+    ReturnRequest:
+      $ref: ./schema/return_request.json
+  parameters:
+    return_request_id:
+      name: return_request_id
+      in: path
+      required: true
+      schema:
+        type: string

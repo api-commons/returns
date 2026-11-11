@@ -1,0 +1,14 @@
+provider: zoho-inventory
+apis_io: https://apis.io/providers/zoho-inventory/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - return
+    properties:
+      line_items: line_items
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/delivery-challans.yml#PUT /deliverychallans/return
+    - openapi/_original/delivery-challans.yml#PUT /deliverychallans/undo/return

@@ -1,0 +1,16 @@
+provider: xentral
+apis_io: https://apis.io/providers/xentral/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - returns
+    properties:
+      id: id
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/xentral-api-openapi-original.json#GET /api/v1/returns
+    - openapi/_original/xentral-api-openapi-original.json#GET /api/v1/returns/{id}
+    - openapi/_original/xentral-api-openapi-original.json#POST /api/v1/returns

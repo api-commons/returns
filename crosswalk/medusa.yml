@@ -1,0 +1,27 @@
+provider: medusa
+apis_io: https://apis.io/providers/medusa/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - returns
+    properties:
+      id: id
+      status: status
+      created_at:
+      - created_at
+      - requested_at
+      line_items: items
+      order_id:
+      - order_id
+      - order
+      reason: reason_id
+      quantity: quantity
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/medusa-admin-openapi.yaml#GET /admin/returns
+    - openapi/_original/medusa-admin-openapi.yaml#GET /admin/returns/{id}
+    - openapi/_original/medusa-admin-openapi.yaml#POST /admin/returns
+    - openapi/_original/medusa-admin-openapi.yaml#POST /admin/returns/{id}
+    - openapi/_original/medusa-store-openapi.yaml#POST /store/returns

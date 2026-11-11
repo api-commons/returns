@@ -1,0 +1,14 @@
+provider: oracle-retail
+apis_io: https://apis.io/providers/oracle-retail/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - returns
+    properties:
+      reason: reason
+      quantity: quantity
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/oracle-retail-order-management-openapi.yml#POST /returns

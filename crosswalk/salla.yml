@@ -1,0 +1,12 @@
+provider: salla
+apis_io: https://apis.io/providers/salla/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - return
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/salla-shipping-fulfillment-api-openapi.yml#POST /shipments/{shipment_id}/return

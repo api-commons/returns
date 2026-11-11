@@ -1,0 +1,12 @@
+provider: optimizely
+apis_io: https://apis.io/providers/optimizely/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - returns
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/optimizely-configured-commerce-storefront-api-v1-openapi.json#POST /api/v1/orders/{orderId}/returns

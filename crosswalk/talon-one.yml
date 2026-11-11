@@ -1,0 +1,12 @@
+provider: talon-one
+apis_io: https://apis.io/providers/talon-one/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - returns
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/talon-one-integration-api-openapi.yml#POST /v2/customer_sessions/{customerSessionId}/returns

@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/returns/main/schema/return_request.json",
+  "title": "Return Request",
+  "description": "The common return_request in Returns, distilled from 27 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.63,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "id",
+        "return_id",
+        "externalId",
+        "rma_id"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.63,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.519,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "created",
+        "requested_at",
+        "date_created",
+        "dateCreated",
+        "createdDate"
+      ],
+      "format": "date-time"
+    },
+    "line_items": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.444,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "items",
+        "line_items",
+        "lineItems",
+        "returnItems",
+        "return_line_items"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.37,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "modified",
+        "modifiedDate"
+      ],
+      "format": "date-time"
+    },
+    "order_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "orderId",
+        "order",
+        "order_id",
+        "originalOrderId",
+        "external_order_id",
+        "order_number"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "reason",
+        "return_reason",
+        "reason_id",
+        "reason_code",
+        "reasonCode"
+      ]
+    },
+    "quantity": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.259,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "quantity"
+      ]
+    },
+    "resolution": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.259,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "returnType",
+        "type",
+        "return_type",
+        "resolution"
+      ]
+    },
+    "tracking_number": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.259,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "tracking_number",
+        "label",
+        "tracking",
+        "trackingNumber"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "returns",
+    "concept": "return_request",
+    "providers": 27,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

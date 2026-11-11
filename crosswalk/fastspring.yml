@@ -1,0 +1,13 @@
+provider: fastspring
+apis_io: https://apis.io/providers/fastspring/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - returns
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/fastspring-openapi.yml#GET /returns/{return_id}
+    - openapi/_original/fastspring-openapi.yml#POST /returns

@@ -1,0 +1,19 @@
+provider: commerce-layer
+apis_io: https://apis.io/providers/commerce-layer/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - returns
+    - return
+    properties:
+      id: id
+      resolution: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/commerce-layer-core-api-openapi.json#DELETE /returns/{returnId}
+    - openapi/_original/commerce-layer-core-api-openapi.json#GET /captures/{captureId}/return
+    - openapi/_original/commerce-layer-core-api-openapi.json#GET /customers/{customerId}/returns
+    - openapi/_original/commerce-layer-core-api-openapi.json#GET /orders/{orderId}/returns
+    - openapi/_original/commerce-layer-core-api-openapi.json#GET /refunds/{refundId}/return

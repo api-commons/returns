@@ -1,0 +1,12 @@
+provider: vinculum
+apis_io: https://apis.io/providers/vinculum/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - return
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/vinculum-eretail-openapi-original.yml#POST /RestWS/api/eretail/v1/order/return

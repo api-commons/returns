@@ -1,0 +1,14 @@
+provider: doordash
+apis_io: https://apis.io/providers/doordash/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - return
+    properties:
+      reason: reason
+      quantity: quantity
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/doordash-marketplace-openapi.yml#POST /api/v1/orders/{id}/return

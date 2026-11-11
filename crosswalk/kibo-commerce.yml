@@ -1,0 +1,24 @@
+provider: kibo-commerce
+apis_io: https://apis.io/providers/kibo-commerce/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - return
+    - returns
+    properties:
+      id:
+      - externalId
+      - id
+      status: status
+      line_items: items
+      order_id: originalOrderId
+      resolution: returnType
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/kibo-commerce-catalog-admin-openapi.yml#DELETE /commerce/rules/return/{code}
+    - openapi/_original/kibo-commerce-catalog-admin-openapi.yml#GET /commerce/rules/return
+    - openapi/_original/kibo-commerce-catalog-admin-openapi.yml#GET /commerce/rules/return/{code}
+    - openapi/_original/kibo-commerce-catalog-admin-openapi.yml#POST /commerce/rules/return
+    - openapi/_original/kibo-commerce-catalog-admin-openapi.yml#PUT /commerce/rules/return/{code}

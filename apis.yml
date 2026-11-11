@@ -1,0 +1,45 @@
+aid: common-returns
+name: Returns
+type: Common
+description: 'The common Returns vocabulary, distilled from the harvested OpenAPI of 370 providers in APIs.io: shared
+  operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each provider''s
+  own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Returns
+- Reverse Logistics
+- Returns Management
+- RMA
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/returns/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-returns:returns
+  name: Common Returns Interface
+  description: The Returns interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/returns
+  tags:
+  - Returns
+  - Reverse Logistics
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/returns/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/returns/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/returns/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: return_request
+    url: https://raw.githubusercontent.com/api-commons/returns/main/schema/return_request.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/returns/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

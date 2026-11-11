@@ -1,0 +1,20 @@
+provider: shipbob
+apis_io: https://apis.io/providers/shipbob/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - return
+    properties:
+      id: id
+      status: status
+      quantity: quantity
+      resolution: return_type
+      tracking_number: tracking_number
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/shipbob-openapi.json#GET /2026-01/return
+    - openapi/_original/shipbob-openapi.json#GET /2026-01/return/{id}
+    - openapi/_original/shipbob-openapi.json#POST /2026-01/return
+    - openapi/_original/shipbob-openapi.json#PUT /2026-01/return/{id}

@@ -1,0 +1,12 @@
+provider: mile
+apis_io: https://apis.io/providers/mile/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - return
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/mile-partner-api-openapi-original.json#POST /api/v1/partners/order/item/return

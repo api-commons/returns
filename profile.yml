@@ -1,0 +1,219 @@
+context: returns
+name: Returns
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Returns
+  - Reverse Logistics
+  - Returns Management
+  - RMA
+  - Exchanges
+  - Post-Purchase
+  - E-Commerce
+  - Order Management
+  - Fulfillment
+  providers_with_harvested_openapi: 370
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  depict:
+  - depictai
+  keap:
+  - infusionsoft
+  optimizely:
+  - zaius
+  webflow:
+  - webflow-api-and-documentation-webflow
+shared_specs: {}
+concepts:
+  return_request:
+    segments_seen:
+      returns: 20
+      return: 15
+      return_requests: 1
+      rmas: 1
+    providers_exposing: 32
+    providers_with_readable_schema: 27
+    operations:
+    - operation: POST collection
+      providers: 24
+      share: 0.75
+      tier: core
+    - operation: GET item
+      providers: 17
+      share: 0.531
+      tier: core
+    - operation: GET collection
+      providers: 16
+      share: 0.5
+      tier: core
+    - operation: UPDATE item
+      providers: 5
+      share: 0.156
+      tier: long-tail
+    - operation: DELETE item
+      providers: 4
+      share: 0.125
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 4
+      share: 0.125
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.031
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.031
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 17
+      share: 0.63
+      type: string
+      spellings:
+      - id
+      - return_id
+      - externalId
+      - rma_id
+    - name: status
+      tier: core
+      providers: 17
+      share: 0.63
+      type: string
+      spellings:
+      - status
+      - state
+    - name: created_at
+      tier: core
+      providers: 14
+      share: 0.519
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - created
+      - requested_at
+      - date_created
+      - dateCreated
+      - createdDate
+    - name: line_items
+      tier: extended
+      providers: 12
+      share: 0.444
+      type: array
+      spellings:
+      - items
+      - line_items
+      - lineItems
+      - returnItems
+      - return_line_items
+    - name: updated_at
+      tier: extended
+      providers: 10
+      share: 0.37
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - modified
+      - modifiedDate
+    - name: order_id
+      tier: extended
+      providers: 9
+      share: 0.333
+      type: string
+      spellings:
+      - orderId
+      - order
+      - order_id
+      - originalOrderId
+      - external_order_id
+      - order_number
+    - name: reason
+      tier: extended
+      providers: 9
+      share: 0.333
+      type: string
+      spellings:
+      - reason
+      - return_reason
+      - reason_id
+      - reason_code
+      - reasonCode
+    - name: quantity
+      tier: extended
+      providers: 7
+      share: 0.259
+      type: integer
+      spellings:
+      - quantity
+    - name: resolution
+      tier: extended
+      providers: 7
+      share: 0.259
+      type: string
+      spellings:
+      - returnType
+      - type
+      - return_type
+      - resolution
+    - name: tracking_number
+      tier: extended
+      providers: 7
+      share: 0.259
+      type: string
+      spellings:
+      - tracking_number
+      - label
+      - tracking
+      - trackingNumber
+    long_tail_count: 305
+    long_tail_sample:
+    - metadata
+    - customer_id
+    - description
+    - name
+    - note
+    - refund_amount
+    - weight
+    - code
+    - created_by
+    - customer_name
+    - date
+    - delivered_at
+    - documents
+    - images
+    - label_url
+    - payments
+    - received_at
+    - return_order_id
+    - shipment_id
+    - source
+    - status_history
+    - totals
+    - tracking_url
+    - transactions
+    - warehouse
+    - warehouse_id
+    - accepted
+    - accepts_exchanges
+    - accepts_returns
+    - achievements
+    - action_required
+    - address
+    - adjustments
+    - advanced_event
+    - amazon_shipment_id
+    - announced_at
+    - apply_rules
+    - arrived_date
+    - audit_info
+    - available_actions

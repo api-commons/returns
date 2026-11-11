@@ -1,0 +1,17 @@
+provider: optoro
+apis_io: https://apis.io/providers/optoro/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - rmas
+    properties:
+      status: status
+      created_at: created_at
+      line_items: items
+      updated_at: updated_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/optoro-rmas-openapi-original.yml#POST /rmas
+    - openapi/_original/optoro-rmas-openapi.yml#POST /rmas

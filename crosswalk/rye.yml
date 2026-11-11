@@ -1,0 +1,21 @@
+provider: rye
+apis_io: https://apis.io/providers/rye/
+context: returns
+generated: '2026-11-11'
+concepts:
+  return_request:
+    path_segment:
+    - returns
+    properties:
+      id: id
+      status: state
+      created_at: createdAt
+      line_items: lineItems
+      updated_at: updatedAt
+      order_id: orderId
+      reason: reason
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/rye-checkout-intents-openapi-original.yml#GET /api/v1/returns/{returnId}
+    - openapi/_original/rye-checkout-intents-openapi-original.yml#POST /api/v1/returns
+    - openapi/_original/rye-checkout-intents-openapi-original.yml#POST /api/v1/test-helpers/returns

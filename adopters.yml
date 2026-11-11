@@ -1,0 +1,163 @@
+context: returns
+generated: '2026-11-11'
+adopters:
+- provider: amazon-seller-central
+  apis_io: https://apis.io/providers/amazon-seller-central/
+  crosswalk: crosswalk/amazon-seller-central.yml
+  concepts:
+  - return_request
+- provider: back-market
+  apis_io: https://apis.io/providers/back-market/
+  crosswalk: crosswalk/back-market.yml
+  concepts:
+  - return_request
+- provider: boxc
+  apis_io: https://apis.io/providers/boxc/
+  crosswalk: crosswalk/boxc.yml
+  concepts:
+  - return_request
+- provider: byrd
+  apis_io: https://apis.io/providers/byrd/
+  crosswalk: crosswalk/byrd.yml
+  concepts:
+  - return_request
+- provider: canal
+  apis_io: https://apis.io/providers/canal/
+  crosswalk: crosswalk/canal.yml
+  concepts:
+  - return_request
+- provider: channable
+  apis_io: https://apis.io/providers/channable/
+  crosswalk: crosswalk/channable.yml
+  concepts:
+  - return_request
+- provider: commerce-layer
+  apis_io: https://apis.io/providers/commerce-layer/
+  crosswalk: crosswalk/commerce-layer.yml
+  concepts:
+  - return_request
+- provider: doordash
+  apis_io: https://apis.io/providers/doordash/
+  crosswalk: crosswalk/doordash.yml
+  concepts:
+  - return_request
+- provider: etsy
+  apis_io: https://apis.io/providers/etsy/
+  crosswalk: crosswalk/etsy.yml
+  concepts:
+  - return_request
+- provider: fastspring
+  apis_io: https://apis.io/providers/fastspring/
+  crosswalk: crosswalk/fastspring.yml
+  concepts:
+  - return_request
+- provider: kibo-commerce
+  apis_io: https://apis.io/providers/kibo-commerce/
+  crosswalk: crosswalk/kibo-commerce.yml
+  concepts:
+  - return_request
+- provider: lightspeed
+  apis_io: https://apis.io/providers/lightspeed/
+  crosswalk: crosswalk/lightspeed.yml
+  concepts:
+  - return_request
+- provider: medusa
+  apis_io: https://apis.io/providers/medusa/
+  crosswalk: crosswalk/medusa.yml
+  concepts:
+  - return_request
+- provider: mile
+  apis_io: https://apis.io/providers/mile/
+  crosswalk: crosswalk/mile.yml
+  concepts:
+  - return_request
+- provider: mirakl
+  apis_io: https://apis.io/providers/mirakl/
+  crosswalk: crosswalk/mirakl.yml
+  concepts:
+  - return_request
+- provider: newstore
+  apis_io: https://apis.io/providers/newstore/
+  crosswalk: crosswalk/newstore.yml
+  concepts:
+  - return_request
+- provider: omniful-inc
+  apis_io: https://apis.io/providers/omniful-inc/
+  crosswalk: crosswalk/omniful-inc.yml
+  concepts:
+  - return_request
+- provider: optimizely
+  apis_io: https://apis.io/providers/optimizely/
+  crosswalk: crosswalk/optimizely.yml
+  concepts:
+  - return_request
+- provider: optoro
+  apis_io: https://apis.io/providers/optoro/
+  crosswalk: crosswalk/optoro.yml
+  concepts:
+  - return_request
+- provider: oracle-retail
+  apis_io: https://apis.io/providers/oracle-retail/
+  crosswalk: crosswalk/oracle-retail.yml
+  concepts:
+  - return_request
+- provider: parcelperform
+  apis_io: https://apis.io/providers/parcelperform/
+  crosswalk: crosswalk/parcelperform.yml
+  concepts:
+  - return_request
+- provider: rye
+  apis_io: https://apis.io/providers/rye/
+  crosswalk: crosswalk/rye.yml
+  concepts:
+  - return_request
+- provider: salla
+  apis_io: https://apis.io/providers/salla/
+  crosswalk: crosswalk/salla.yml
+  concepts:
+  - return_request
+- provider: sendcloud
+  apis_io: https://apis.io/providers/sendcloud/
+  crosswalk: crosswalk/sendcloud.yml
+  concepts:
+  - return_request
+- provider: shipbob
+  apis_io: https://apis.io/providers/shipbob/
+  crosswalk: crosswalk/shipbob.yml
+  concepts:
+  - return_request
+- provider: shipmonk
+  apis_io: https://apis.io/providers/shipmonk/
+  crosswalk: crosswalk/shipmonk.yml
+  concepts:
+  - return_request
+- provider: talon-one
+  apis_io: https://apis.io/providers/talon-one/
+  crosswalk: crosswalk/talon-one.yml
+  concepts:
+  - return_request
+- provider: vinculum
+  apis_io: https://apis.io/providers/vinculum/
+  crosswalk: crosswalk/vinculum.yml
+  concepts:
+  - return_request
+- provider: virto-commerce
+  apis_io: https://apis.io/providers/virto-commerce/
+  crosswalk: crosswalk/virto-commerce.yml
+  concepts:
+  - return_request
+- provider: walmart
+  apis_io: https://apis.io/providers/walmart/
+  crosswalk: crosswalk/walmart.yml
+  concepts:
+  - return_request
+- provider: xentral
+  apis_io: https://apis.io/providers/xentral/
+  crosswalk: crosswalk/xentral.yml
+  concepts:
+  - return_request
+- provider: zoho-inventory
+  apis_io: https://apis.io/providers/zoho-inventory/
+  crosswalk: crosswalk/zoho-inventory.yml
+  concepts:
+  - return_request
